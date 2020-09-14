@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace ProyectoUNAD.Forms
 {
     public partial class frmLogin : Form
-    {
+    {        
         public frmLogin()
         {
             InitializeComponent();
@@ -62,9 +62,11 @@ namespace ProyectoUNAD.Forms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            frmMain main = frmMain.GetInstance();
+            main.Show();
+            this.Hide();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -98,6 +100,11 @@ namespace ProyectoUNAD.Forms
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

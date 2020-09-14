@@ -37,6 +37,9 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.linkRegister = new System.Windows.Forms.LinkLabel();
+            this.lblErros = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pnlRegister = new System.Windows.Forms.Panel();
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.txtPassReg = new System.Windows.Forms.TextBox();
@@ -48,9 +51,6 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.linkRegister = new System.Windows.Forms.LinkLabel();
-            this.lblErros = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -112,7 +112,7 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox3
             // 
@@ -175,6 +175,41 @@
             this.pnlLogin.Size = new System.Drawing.Size(222, 392);
             this.pnlLogin.TabIndex = 12;
             this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // linkRegister
+            // 
+            this.linkRegister.AutoSize = true;
+            this.linkRegister.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegister.LinkColor = System.Drawing.Color.White;
+            this.linkRegister.Location = new System.Drawing.Point(4, 372);
+            this.linkRegister.Name = "linkRegister";
+            this.linkRegister.Size = new System.Drawing.Size(66, 15);
+            this.linkRegister.TabIndex = 17;
+            this.linkRegister.TabStop = true;
+            this.linkRegister.Text = "Registrarse";
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
+            // 
+            // lblErros
+            // 
+            this.lblErros.AutoSize = true;
+            this.lblErros.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErros.ForeColor = System.Drawing.Color.White;
+            this.lblErros.Location = new System.Drawing.Point(4, 149);
+            this.lblErros.Name = "lblErros";
+            this.lblErros.Size = new System.Drawing.Size(0, 17);
+            this.lblErros.TabIndex = 13;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(3, 267);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(92, 19);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.Text = "Recordarme";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // pnlRegister
             // 
@@ -285,6 +320,7 @@
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Registrarse";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // pictureBox6
             // 
@@ -306,41 +342,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
-            // 
-            // linkRegister
-            // 
-            this.linkRegister.AutoSize = true;
-            this.linkRegister.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkRegister.LinkColor = System.Drawing.Color.White;
-            this.linkRegister.Location = new System.Drawing.Point(4, 372);
-            this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(66, 15);
-            this.linkRegister.TabIndex = 17;
-            this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "Registrarse";
-            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
-            // 
-            // lblErros
-            // 
-            this.lblErros.AutoSize = true;
-            this.lblErros.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErros.ForeColor = System.Drawing.Color.White;
-            this.lblErros.Location = new System.Drawing.Point(4, 149);
-            this.lblErros.Name = "lblErros";
-            this.lblErros.Size = new System.Drawing.Size(0, 17);
-            this.lblErros.TabIndex = 13;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(3, 267);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(92, 19);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "Recordarme";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -383,6 +384,7 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
