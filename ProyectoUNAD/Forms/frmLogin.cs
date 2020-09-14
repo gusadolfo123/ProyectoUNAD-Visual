@@ -16,6 +16,8 @@ namespace ProyectoUNAD.Forms
         public frmLogin()
         {
             InitializeComponent();
+            pnlRegister.Visible = false;
+            pnlLogin.Visible = true;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -68,6 +70,34 @@ namespace ProyectoUNAD.Forms
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void linkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlLogin.Visible = true;
+            pnlRegister.Visible = false;
+        }
+
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pnlRegister.Visible = true;
+            pnlLogin.Visible = false;
+        }
+
+        private void pictureBox9_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pictureBox9, "Cerrar");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
