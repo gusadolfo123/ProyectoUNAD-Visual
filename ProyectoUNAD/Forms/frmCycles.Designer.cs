@@ -1,6 +1,6 @@
 ﻿namespace ProyectoUNAD.Forms
 {
-    partial class frmBasicOperations
+    partial class frmCycles
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // frmBasicOperations
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(198, 153);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // frmCycles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmBasicOperations";
-            this.Text = "frmBasicOperations";
-            this.Load += new System.EventHandler(this.frmBasicOperations_Load);
+            this.Controls.Add(this.textBox1);
+            this.Name = "frmCycles";
+            this.Text = "frmCycles";
+            this.Load += new System.EventHandler(this.frmCycles_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -272,6 +272,7 @@
             this.pnlPrimary.Name = "pnlPrimary";
             this.pnlPrimary.Size = new System.Drawing.Size(642, 424);
             this.pnlPrimary.TabIndex = 4;
+            this.pnlPrimary.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPrimary_Paint);
             // 
             // frmMain
             // 

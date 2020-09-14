@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace ProyectoUNAD.Forms
 {
-    public partial class frmBasicOperations : Form
+    public partial class frmCycles : Form
     {
-        private static frmBasicOperations _instance;
+        private static frmCycles _instance;
 
-        public static frmBasicOperations GetInstance()
+        public static frmCycles GetInstance()
         {
             if (_instance == null)
-                _instance = new frmBasicOperations();
+                _instance = new frmCycles();
             return _instance;
         }
 
-        public frmBasicOperations()
+        public frmCycles()
         {
             InitializeComponent();
         }
 
-        private void frmBasicOperations_Load(object sender, EventArgs e)
+        private void frmCycles_Load(object sender, EventArgs e)
         {
 
         }

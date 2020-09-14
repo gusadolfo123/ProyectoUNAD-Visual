@@ -45,10 +45,9 @@ namespace ProyectoUNAD.Forms
 
         private void OpenFormChild(Form childForm)
         {
-            if(_currentChildForm != null)
+            if (_currentChildForm != null)
             {
-                // open only form
-                _currentChildForm.Close();
+                 _currentChildForm.Close();
             }
 
             _currentChildForm = childForm;
@@ -109,11 +108,13 @@ namespace ProyectoUNAD.Forms
         private void btnConditional_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
+             OpenFormChild(new frmConditions());
         }
 
         private void btnIterable_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
+             OpenFormChild(new frmCycles());
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -163,6 +164,11 @@ namespace ProyectoUNAD.Forms
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+        }
+
+        private void pnlPrimary_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
