@@ -28,7 +28,14 @@ namespace ProyectoUNAD.Forms
 
         private void frmCycles_Load(object sender, EventArgs e)
         {
-
+            var embed = "<html><head>" +
+                        "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+                        "</head><body>" +
+                        "<iframe src=\"{0}\" width=\"100%\" height=\"360\" " +
+                        "frameborder = \"0\" allow = \"autoplay; encrypted-media\" allowfullscreen></iframe>" +
+                        "</body></html>";
+            var url = "https://www.youtube.com/embed/migkiIl5u9k";
+            this.webBrowser1.DocumentText = string.Format(embed, url);
         }
     }
 }

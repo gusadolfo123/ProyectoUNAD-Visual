@@ -360,9 +360,9 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox9.Image = global::ProyectoUNAD.Properties.Resources.cerrar;
-            this.pictureBox9.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(2, 1);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox9.Size = new System.Drawing.Size(17, 19);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 15;
             this.pictureBox9.TabStop = false;

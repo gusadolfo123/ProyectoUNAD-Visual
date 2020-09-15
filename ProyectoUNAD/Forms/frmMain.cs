@@ -57,6 +57,7 @@ namespace ProyectoUNAD.Forms
             pnlPrimary.Controls.Add(childForm);
             pnlPrimary.Tag = childForm;
             childForm.BringToFront();
+            childForm.Width = pnlPrimary.Width;
             childForm.Show();
         }
 

@@ -43,9 +43,11 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlPrimary = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlHeader.SuspendLayout();
             this.pnlProgress.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +64,7 @@
             this.pnlMenu.ForeColor = System.Drawing.Color.White;
             this.pnlMenu.Location = new System.Drawing.Point(0, 27);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(200, 502);
+            this.pnlMenu.Size = new System.Drawing.Size(200, 564);
             this.pnlMenu.TabIndex = 0;
             // 
             // btnExit
@@ -79,7 +81,7 @@
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.IconSize = 34;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 442);
+            this.btnExit.Location = new System.Drawing.Point(0, 504);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnExit.Rotation = 0D;
@@ -203,11 +205,12 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlHeader.Controls.Add(this.button1);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(842, 27);
+            this.pnlHeader.Size = new System.Drawing.Size(992, 27);
             this.pnlHeader.TabIndex = 1;
             this.pnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseDown);
             // 
@@ -220,7 +223,7 @@
             this.pnlProgress.ForeColor = System.Drawing.Color.White;
             this.pnlProgress.Location = new System.Drawing.Point(200, 27);
             this.pnlProgress.Name = "pnlProgress";
-            this.pnlProgress.Size = new System.Drawing.Size(642, 38);
+            this.pnlProgress.Size = new System.Drawing.Size(792, 38);
             this.pnlProgress.TabIndex = 2;
             // 
             // progressBar1
@@ -230,7 +233,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.Location = new System.Drawing.Point(104, 12);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(501, 13);
+            this.progressBar1.Size = new System.Drawing.Size(651, 13);
             this.progressBar1.TabIndex = 2;
             // 
             // label1
@@ -250,7 +253,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(642, 40);
+            this.lblTitle.Size = new System.Drawing.Size(792, 40);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Inicio";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -262,7 +265,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 40);
+            this.panel1.Size = new System.Drawing.Size(792, 40);
             this.panel1.TabIndex = 3;
             // 
             // pnlPrimary
@@ -270,15 +273,27 @@
             this.pnlPrimary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrimary.Location = new System.Drawing.Point(200, 105);
             this.pnlPrimary.Name = "pnlPrimary";
-            this.pnlPrimary.Size = new System.Drawing.Size(642, 424);
+            this.pnlPrimary.Size = new System.Drawing.Size(792, 486);
             this.pnlPrimary.TabIndex = 4;
             this.pnlPrimary.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPrimary_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(964, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 26);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 529);
+            this.ClientSize = new System.Drawing.Size(992, 591);
             this.Controls.Add(this.pnlPrimary);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlProgress);
@@ -293,6 +308,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlHeader.ResumeLayout(false);
             this.pnlProgress.ResumeLayout(false);
             this.pnlProgress.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -317,5 +333,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlPrimary;
+        private System.Windows.Forms.Button button1;
     }
 }
