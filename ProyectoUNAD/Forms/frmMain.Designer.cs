@@ -29,12 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.btnIterable = new FontAwesome.Sharp.IconButton();
-            this.btnConditional = new FontAwesome.Sharp.IconButton();
-            this.btnBasicOp = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNameUser = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlProgress = new System.Windows.Forms.Panel();
@@ -44,12 +39,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlPrimary = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.btnIterable = new FontAwesome.Sharp.IconButton();
+            this.btnConditional = new FontAwesome.Sharp.IconButton();
+            this.btnBasicOp = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlHeader.SuspendLayout();
             this.pnlProgress.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -66,6 +66,115 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(200, 564);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.lblNameUser);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 182);
+            this.panel2.TabIndex = 0;
+            // 
+            // lblNameUser
+            // 
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameUser.Location = new System.Drawing.Point(38, 155);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(114, 16);
+            this.lblNameUser.TabIndex = 0;
+            this.lblNameUser.Text = "Gustavo Moreno";
+            // 
+            // pnlHeader
+            // 
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlHeader.Controls.Add(this.button1);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(992, 27);
+            this.pnlHeader.TabIndex = 1;
+            this.pnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseDown);
+            // 
+            // pnlProgress
+            // 
+            this.pnlProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(54)))), ((int)(((byte)(115)))));
+            this.pnlProgress.Controls.Add(this.progressBar1);
+            this.pnlProgress.Controls.Add(this.label1);
+            this.pnlProgress.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlProgress.ForeColor = System.Drawing.Color.White;
+            this.pnlProgress.Location = new System.Drawing.Point(200, 27);
+            this.pnlProgress.Name = "pnlProgress";
+            this.pnlProgress.Size = new System.Drawing.Size(792, 38);
+            this.pnlProgress.TabIndex = 2;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(104, 12);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(651, 13);
+            this.progressBar1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tu Progreso";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(792, 40);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Inicio";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(200, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(792, 40);
+            this.panel1.TabIndex = 3;
+            // 
+            // pnlPrimary
+            // 
+            this.pnlPrimary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrimary.Location = new System.Drawing.Point(200, 105);
+            this.pnlPrimary.Name = "pnlPrimary";
+            this.pnlPrimary.Size = new System.Drawing.Size(792, 486);
+            this.pnlPrimary.TabIndex = 4;
+            this.pnlPrimary.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPrimary_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
+            this.button1.Location = new System.Drawing.Point(964, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 26);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnExit
             // 
@@ -171,16 +280,6 @@
             this.btnBasicOp.UseVisualStyleBackColor = false;
             this.btnBasicOp.Click += new System.EventHandler(this.btnBasicOp_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.lblNameUser);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 182);
-            this.panel2.TabIndex = 0;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -192,102 +291,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lblNameUser
-            // 
-            this.lblNameUser.AutoSize = true;
-            this.lblNameUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameUser.Location = new System.Drawing.Point(38, 155);
-            this.lblNameUser.Name = "lblNameUser";
-            this.lblNameUser.Size = new System.Drawing.Size(114, 16);
-            this.lblNameUser.TabIndex = 0;
-            this.lblNameUser.Text = "Gustavo Moreno";
-            // 
-            // pnlHeader
-            // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pnlHeader.Controls.Add(this.button1);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(992, 27);
-            this.pnlHeader.TabIndex = 1;
-            this.pnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseDown);
-            // 
-            // pnlProgress
-            // 
-            this.pnlProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(54)))), ((int)(((byte)(115)))));
-            this.pnlProgress.Controls.Add(this.progressBar1);
-            this.pnlProgress.Controls.Add(this.label1);
-            this.pnlProgress.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlProgress.ForeColor = System.Drawing.Color.White;
-            this.pnlProgress.Location = new System.Drawing.Point(200, 27);
-            this.pnlProgress.Name = "pnlProgress";
-            this.pnlProgress.Size = new System.Drawing.Size(792, 38);
-            this.pnlProgress.TabIndex = 2;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(104, 12);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(651, 13);
-            this.progressBar1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tu Progreso";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(792, 40);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Inicio";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 40);
-            this.panel1.TabIndex = 3;
-            // 
-            // pnlPrimary
-            // 
-            this.pnlPrimary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrimary.Location = new System.Drawing.Point(200, 105);
-            this.pnlPrimary.Name = "pnlPrimary";
-            this.pnlPrimary.Size = new System.Drawing.Size(792, 486);
-            this.pnlPrimary.TabIndex = 4;
-            this.pnlPrimary.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPrimary_Paint);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(964, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 26);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
@@ -307,11 +310,11 @@
             this.pnlMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlHeader.ResumeLayout(false);
             this.pnlProgress.ResumeLayout(false);
             this.pnlProgress.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

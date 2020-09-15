@@ -36,7 +36,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -48,6 +51,7 @@
             this.flowLayoutPanel1.Controls.Add(this.label3);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -133,6 +137,32 @@
             this.label5.Text = resources.GetString("label5.Text");
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.Enabled = false;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileSignature;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconSize = 16;
+            this.iconButton1.Location = new System.Drawing.Point(25, 26);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(174, 48);
+            this.iconButton1.TabIndex = 0;
+            this.iconButton1.Text = "Presentar Examen";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(3, 937);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(649, 100);
+            this.panel1.TabIndex = 7;
+            // 
             // frmConditions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +175,7 @@
             this.Load += new System.EventHandler(this.frmConditions_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -158,5 +189,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

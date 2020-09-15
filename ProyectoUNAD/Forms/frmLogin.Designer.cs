@@ -52,7 +52,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -63,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -355,19 +354,20 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Creado por: Gustavo Moreno";
             // 
-            // pictureBox9
+            // button1
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox9.Image = global::ProyectoUNAD.Properties.Resources.cerrar;
-            this.pictureBox9.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(17, 19);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 15;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            this.pictureBox9.MouseHover += new System.EventHandler(this.pictureBox9_MouseHover);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::ProyectoUNAD.Properties.Resources.cerrar;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 26);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmLogin
             // 
@@ -376,7 +376,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
             this.BackgroundImage = global::ProyectoUNAD.Properties.Resources.Formulario1;
             this.ClientSize = new System.Drawing.Size(688, 450);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pnlRegister);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlLogin);
@@ -399,7 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,6 +430,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.LinkLabel linkRegister;
         private System.Windows.Forms.LinkLabel linkLogin;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button1;
     }
 }

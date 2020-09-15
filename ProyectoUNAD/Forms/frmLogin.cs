@@ -94,7 +94,7 @@ namespace ProyectoUNAD.Forms
         private void pictureBox9_MouseHover(object sender, EventArgs e)
         {
             ToolTip tt = new ToolTip();
-            tt.SetToolTip(this.pictureBox9, "Cerrar");
+            tt.SetToolTip(this.button1, "Cerrar");
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -105,6 +105,11 @@ namespace ProyectoUNAD.Forms
         private void btnRegister_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

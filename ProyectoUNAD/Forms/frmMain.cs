@@ -97,7 +97,7 @@ namespace ProyectoUNAD.Forms
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            OpenFormChild(new frmHome());
         }
 
         private void btnBasicOp_Click(object sender, EventArgs e)
@@ -109,13 +109,13 @@ namespace ProyectoUNAD.Forms
         private void btnConditional_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-             OpenFormChild(new frmConditions());
+            OpenFormChild(new frmConditions());
         }
 
         private void btnIterable_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-             OpenFormChild(new frmCycles());
+            OpenFormChild(new frmCycles());
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -159,6 +159,7 @@ namespace ProyectoUNAD.Forms
         {
             Reset();
             lblTitle.Text = "Inicio";
+            OpenFormChild(new frmHome());
         }
 
         private void Reset()
@@ -170,6 +171,11 @@ namespace ProyectoUNAD.Forms
         private void pnlPrimary_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
