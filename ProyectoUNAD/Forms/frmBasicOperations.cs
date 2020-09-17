@@ -43,5 +43,26 @@ namespace ProyectoUNAD.Forms
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmTest childForm = new frmTest();
+            frmBasicOperations _currentChildForm = this;
+            Panel myPanel = (Panel)this.Parent;
+
+            if (_currentChildForm != null)
+            {
+                _currentChildForm.Close(); 
+            }
+
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            myPanel.Controls.Add(childForm);
+            myPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Width = myPanel.Width;
+            childForm.Show();
+        }
     }
 }

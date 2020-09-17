@@ -132,7 +132,6 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.Enabled = false;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileSignature;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
@@ -146,6 +145,7 @@
             this.iconButton1.Text = "Presentar Examen";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // frmBasicOperations
             // 
